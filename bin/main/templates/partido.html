@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>4 en linea</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
+
+    <script type="text/javascript" th:src="@{/js/partido.js}"></script>
+    <script type="text/javascript" th:src="@{/js/libs/jQuery.js}"></script>
+
+</head>
+
+<body>
+    <div id="marco">
+        <div id="titulo">4 EN LINEA</div>
+        <div id="idPartido"> </div>
+        <div id="info">
+            <div>Jugadores:
+                <div>jugador uno:</div>
+                <div id="nombreJugadorUno"></div>
+                <div>Jugador dos:</div>
+                <div id="nombreJugadorDos"></div>
+            </div>
+            <div id="turnero">
+                <div>Turno: </div>
+                <div id="turno"></div>
+                <div id="resultado"></div>
+            </div>
+        </div>
+        <div id="volverIndex">
+            <!-- <button type="buttonPanel" id="botonVolverIndex">Volver al menu</button> -->
+            <button type="buttonPanel" id="resultados">Resultados</button>
+            <button type="buttonPanel" id="botonRecargar">Recargar</button>
+
+
+        </div>
+
+        <div id="tablero"></div>
+        <table>
+            <tr>
+                <td>
+                    <div class="flecha" id="columna1"></div>
+                </td>
+                <td>
+                    <div class="flecha" id="columna2"></div>
+                </td>
+                <td>
+                    <div class="flecha" id="columna3"></div>
+                </td>
+                <td>
+                    <div class="flecha" id="columna4"></div>
+                </td>
+                <td>
+                    <div class="flecha" id="columna5"></div>
+                </td>
+                <td>
+                    <div class="flecha" id="columna6"></div>
+                </td>
+                <td>
+                    <div class="flecha" id="columna7"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="hueco" id="celda11">11</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda21">21</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda31">31</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda41">41</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda51">51</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda61">61</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda71">71</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="hueco" id="celda12">12</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda22">22</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda32">32</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda42">42</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda52">52</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda62">62</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda72">72</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="hueco" id="celda13">13</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda23">23</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda33">33</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda43">43</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda53">53</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda63">63</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda73">73</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="hueco" id="celda14">14</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda24">24</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda34">34</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda44">44</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda54">54</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda64">64</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda74">74</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="hueco" id="celda15">15</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda25">25</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda35">35</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda45">45</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda55">55</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda65">65</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda75">75</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="hueco" id="celda16">16</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda26">26</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda36">36</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda46">46</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda56">56</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda66">66</div>
+                </td>
+                <td>
+                    <div class="hueco" id="celda76">76</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+
+
+</html>

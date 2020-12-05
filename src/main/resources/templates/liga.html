@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<title>Liga</title>
+
+<head>
+    <link th:href="@{/css/league.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/js/liga.js}"></script>
+    <script type="text/javascript" th:src="@{/js/libs/jQuery.js}"></script>
+</head>
+
+<body>
+
+    <div>
+        <button type="button" id="botonVolverPartido">Cancelar</button>
+    </div>
+
+    <div class="tabla">
+        <h1 class="titulo">Puntajes</h1>
+        <table id="tabla">
+            <tr class="col">
+                <th>Jugador</th>
+                <th>Puntaje</th>
+                <th>Ganados</th>
+                <th>Empatados</th>
+                <th>Perdidos</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="modal" id="modal-liga-terminada">
+        <div class="modal-content">
+            <div id="mensajeLigaTerminada"></div>
+            <div id="ligaTerminada">
+                <button id="ligaTerminadaButton">OK</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
