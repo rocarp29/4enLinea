@@ -2,9 +2,9 @@
 
 Juego 4 en linea 
 Cuenta con 3 formatos de juego:
-1. Partida aleatoria con un ganador
-2. Copa: serie de partidas con eliminación para llegar a un único ganador
-3. Liga: todos los jugadores juegan contra todos y se define por puntos
+1. Partida: 1v1 con un ganador
+2. Copa: 8 jugadores; partidas con eliminación directa para llegar a un único ganador
+3. Liga: 8 jugadores; todos los jugadores juegan contra todos y se define por puntos
 
 #Modelos:
 Copa.java
@@ -23,5 +23,5 @@ CopaService.java
 LigaService.java
 
 Aplicación con arquitectura MVC.
-Armado con Java, JavaScript, HTML y CSS.
+Java, JavaScript, HTML y CSS.
 Gradle y SpringBoot
