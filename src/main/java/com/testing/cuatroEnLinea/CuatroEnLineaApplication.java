@@ -47,10 +47,10 @@ public class CuatroEnLineaApplication {
 			Jugador jugadorDos = new Jugador("JugadorDos");
 			Jugador jugadorTres = new Jugador("JugadorTres");
 			Jugador jugadorCuatro = new Jugador("JugadorCuatro");
-			/*Jugador jugadorCinco = new Jugador("JugadorCinco");
+			Jugador jugadorCinco = new Jugador("JugadorCinco");
 			Jugador jugadorSeis = new Jugador("JugadorSeis");
 			Jugador jugadorSiete = new Jugador("JugadorSiete");
-			Jugador jugadorOcho = new Jugador("JugadorOcho");*/
+			Jugador jugadorOcho = new Jugador("JugadorOcho");
 			
 
 			List<Jugador> jugadores = new ArrayList<>();
@@ -58,10 +58,10 @@ public class CuatroEnLineaApplication {
 			jugadores.add(jugadorDos);
 			jugadores.add(jugadorTres);
 			jugadores.add(jugadorCuatro);
-			/*jugadores.add(jugadorCinco);
+			jugadores.add(jugadorCinco);
 			jugadores.add(jugadorSeis);
 			jugadores.add(jugadorSiete);
-			jugadores.add(jugadorOcho);*/
+			jugadores.add(jugadorOcho);
 
 			ligaService.setJugadoresPorDefecto(jugadores);
 			ligaService.resetLiga();
